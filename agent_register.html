@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="dist/css/adminlte.min.css">
+</head>
+
+<body class="hold-transition sidebar-mini">
+    <div class="wrapper">
+        <!-- Content Wrapper. Contains page content -->
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+            <div class="container-fluid">
+                <div class="row mb-2">
+                    <div class="col-sm-12">
+                        <h1>Agent Registration Form</h1>
+                    </div>
+                </div>
+            </div><!-- /.container-fluid -->
+        </section>
+
+        <!-- Main content -->
+        <section class="content">
+            <div class="container-fluid">
+                <form>
+                    <div class="row">
+                        <!-- left column -->
+                        <div class="col-md-6">
+                            <!-- general form elements -->
+                            <div class="card card-primary">
+                                <div class="card-header">
+                                    <h3 class="card-title">Agent Detail</h3>
+                                </div>
+                                <!-- /.card-header -->
+                                <!-- form start -->
+
+                                <div class="card-body">
+                                    <div class="form-group">
+                                        <label for="business_name">Business Name</label>
+                                        <input type="text" class="form-control" name="business_name" id="business_name"
+                                            placeholder="Business Name">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="business_registration_number">Business Registration Number</label>
+                                        <input type="text" class="form-control" name="business_registration_number"
+                                            id="business_registration_number"
+                                            placeholder="Business Registration Number">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="address">Business Address</label>
+                                        <input type="text" class="form-control" id="address1" name="address1"
+                                            placeholder="Address One"><br>
+                                        <input type="text" class="form-control" id="address2" name="address2"
+                                            placeholder="Address Two"><br>
+                                        <input type="text" class="form-control" id="city" name="city"
+                                            placeholder="City"><br>
+                                        <input type="text" class="form-control" id="state" name="state"
+                                            placeholder="State or Province"><br>
+                                        <input type="text" class="form-control" id="country" name="country"
+                                            placeholder="Country"><br>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="business_photo">Business Photo</label>
+                                        <div class="input-group">
+                                            <img src="dist/img/avatar.png" height="90px">
+                                            <div class="custom-file">
+                                                <input type="file" class="custom-file-input" id="business_photo"
+                                                    name="business_photo">
+                                                <label class="custom-file-label" for="business_photo">Choose Business
+                                                    Photo</label>
+                                            </div>
+                                            <div class="input-group-append">
+                                                <span class="input-group-text">Upload</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /.card-body -->
+                            </div>
+                            <!-- /.card -->
+                        </div>
+                        <!--/.col (left) -->
+                        <!-- right column -->
+                        <div class="col-md-6">
+                            <!-- general form elements -->
+                            <div class="card card-primary">
+                                <div class="card-header">
+                                    <h3 class="card-title">Contact Person</h3>
+                                </div>
+                                <!-- /.card-header -->
+                                <!-- form start -->
+                                <div class="card-body">
+                                    <div class="form-group">
+                                        <label for="contact_details">Contact Details</label>
+                                        <input type="text" class="form-control" id="mobile_number" name="mobile_number"
+                                            placeholder="Mobile Number"><br>
+                                        <input type="text" class="form-control" id="other_contact_number"
+                                            name="other_contact_number" placeholder="Other Contact Number"><br>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">EMail ID</label>
+                                        <input type="email" class="form-control" name="email" id="email"
+                                            placeholder="EMail Address">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="bank_details">Bank Details</label>
+                                        <input type="text" class="form-control" name="account_name" id="account_name"
+                                            placeholder="Account Name"><br>
+                                        <input type="text" class="form-control" name="account_number"
+                                            id="account_number" placeholder="Account Number"><br>
+                                        <input type="text" class="form-control" name="bank" id="bank"
+                                            placeholder="Bank"><br>
+                                        <input type="text" class="form-control" name="branch" id="branch"
+                                            placeholder="Branch"><br>
+                                        <input type="text" class="form-control" name="code" id="code"
+                                            placeholder="Code (if Any)"><br>
+                                    </div>
+                                </div>
+                                <!-- /.card-body -->
+                                <div class="card-footer">
+                                    <button type="submit" class="btn btn-primary">Register</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.card -->
+                    </div>
+                    <!--/.col (right) -->
+            </div>
+            <!-- /.row -->
+            </form>
+    </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+    </div>
+    <!-- ./wrapper -->
+
+    <!-- jQuery -->
+    <script src="../../plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- bs-custom-file-input -->
+    <script src="../../plugins/bs-custom-file-input/bs-custom-file-input.min.js"></script>
+    <script src="../../dist/js/adminlte.min.js"></script>
+    <script src="../../dist/js/demo.js"></script>
+    <!-- Page specific script -->
+    <script>
+        $(function () {
+            bsCustomFileInput.init();
+        });
+    </script>
+</body>
+
+</html>

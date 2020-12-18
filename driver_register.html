@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="dist/css/adminlte.min.css">
+</head>
+
+<body class="hold-transition sidebar-mini">
+    <div class="wrapper">
+        <!-- Content Wrapper. Contains page content -->
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+            <div class="container-fluid">
+                <div class="row mb-2">
+                    <div class="col-sm-12">
+                        <h1>Driver Registration Form</h1>
+                    </div>
+                </div>
+            </div><!-- /.container-fluid -->
+        </section>
+
+        <!-- Main content -->
+        <section class="content">
+            <div class="container-fluid">
+                <form>
+                    <div class="row">
+                        <!-- left column -->
+                        <div class="col-md-6">
+                            <!-- general form elements -->
+                            <div class="card card-primary">
+                                <div class="card-header">
+                                    <h3 class="card-title">Driver Detail</h3>
+                                </div>
+                                <!-- /.card-header -->
+                                <!-- form start -->
+
+                                <div class="card-body">
+                                    <div class="form-group">
+                                        <label for="driver_name">Driver Name</label>
+                                        <input type="text" class="form-control" name="driver_name" id="driver_name"
+                                            placeholder="Driver Name">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="address">Address</label>
+                                        <input type="text" class="form-control" id="address1" name="address1"
+                                            placeholder="Address One"><br>
+                                        <input type="text" class="form-control" id="address2" name="address2"
+                                            placeholder="Address Two"><br>
+                                        <input type="text" class="form-control" id="city" name="city"
+                                            placeholder="City"><br>
+                                        <input type="text" class="form-control" id="state" name="state"
+                                            placeholder="State"><br>
+                                        <input type="text" class="form-control" id="country" name="country"
+                                            placeholder="Country"><br>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="driver_photo">Driver Photo</label>
+                                        <div class="input-group">
+                                            <img src="dist/img/avatar.png" height="90px">
+                                            <div class="custom-file">
+                                                <input type="file" class="custom-file-input" id="driver_photo"
+                                                    name="driver_photo">
+                                                <label class="custom-file-label" for="driver_photo">Driver Photo</label>
+                                            </div>
+                                            <div class="input-group-append">
+                                                <span class="input-group-text">Upload</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="driving_license_number">Driving License Number</label>
+                                        <input type="text" class="form-control" name="driving_license_number"
+                                            id="driving_license_number" placeholder="Driving License Number">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="vehicle_detail">Vehicle Details</label>
+                                        <select class="custom-select rounded-0" id="vehicle_type" name="vehicle_type">
+                                            <option checked>Vehicle Type</option>
+                                            <option>Two Wheeler</option>
+                                            <option>Four Wheeler</option>
+                                        </select><br><br>
+                                        <input type="text" class="form-control" name="vehicle_registration_number"
+                                            id="vehicle_registration_number"
+                                            placeholder="Vehicle Registration Number"><br>
+                                        <input type="text" class="form-control" name="vehicle_manufacture_year"
+                                            id="vehicle_manufacture_year" placeholder="Vehicle Manufacture Year">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="vehicle_photo">Vehicle Photo</label>
+                                        <div class="input-group">
+                                            <img src="dist/img/avatar.png" height="90px">
+                                            <div class="custom-file">
+                                                <input type="file" class="custom-file-input" id="inside_vehicle_photo"
+                                                    name="inside_vehicle_photo">
+                                                <label class="custom-file-label" for="inside_vehicle_photo">Inside
+                                                    Vehicle Photo</label>
+                                            </div>
+                                            <div class="input-group-append">
+                                                <span class="input-group-text">Upload</span>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <div class="input-group">
+                                            <img src="dist/img/avatar.png" height="90px">
+                                            <div class="custom-file">
+                                                <input type="file" class="custom-file-input" id="outside_vehicle_photo"
+                                                    name="outside_vehicle_photo">
+                                                <label class="custom-file-label" for="outside_vehicle_photo">Outside
+                                                    Vehicle Photo</label>
+                                            </div>
+                                            <div class="input-group-append">
+                                                <span class="input-group-text">Upload</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /.card-body -->
+                            </div>
+                            <!-- /.card -->
+                        </div>
+                        <!--/.col (left) -->
+                        <!-- right column -->
+                        <div class="col-md-6">
+                            <!-- general form elements -->
+                            <div class="card card-primary">
+                                <div class="card-header">
+                                    <h3 class="card-title">Contact Person</h3>
+                                </div>
+                                <!-- /.card-header -->
+                                <!-- form start -->
+                                <div class="card-body">
+                                    <div class="form-group">
+                                        <label for="contact_details">Contact Details</label>
+                                        <input type="text" class="form-control" id="mobile_number" name="mobile_number"
+                                            placeholder="Mobile Number"><br>
+                                        <input type="text" class="form-control" id="other_contact_number"
+                                            name="other_contact_number" placeholder="Other Contact Number"><br>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">EMail ID</label>
+                                        <input type="email" class="form-control" name="email" id="email"
+                                            placeholder="EMail Address">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="dob">DOB</label>
+                                        <input type="date" class="form-control" name="dob" id="dob">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="driver_photo">Driver Photo</label>
+                                        <div class="input-group">
+                                            <img src="dist/img/avatar.png" height="90px">
+                                            <div class="custom-file">
+                                                <input type="file" class="custom-file-input" id="document_photo"
+                                                    name="document_photo">
+                                                <label class="custom-file-label" for="exampleInputFile">Document
+                                                    Photo</label>
+                                            </div>
+                                            <div class="input-group-append">
+                                                <span class="input-group-text">Upload</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="bank_detail">Bank Details</label>
+                                        <input type="text" class="form-control" name="account_name" id="account_name"
+                                            placeholder="Account Name"><br>
+                                        <input type="text" class="form-control" name="account_number"
+                                            id="account_number" placeholder="Account Number"><br>
+                                        <input type="text" class="form-control" name="bank" id="bank"
+                                            placeholder="Bank"><br>
+                                        <input type="text" class="form-control" name="branch" id="branch"
+                                            placeholder="Branch"><br>
+                                        <input type="text" class="form-control" name="code" id="code"
+                                            placeholder="Code"><br>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="insurance_policy_number">Insurance Policy Number</label>
+                                        <input type="text" class="form-control" name="insurance_policy_number"
+                                            id="insurance_policy_number" placeholder="Insurance Policy Number">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="insurance_policy_expiry_date">Insurance Policy Expire Date</label>
+                                        <input type="date" class="form-control" name="insurance_policy_expiry_date"
+                                            id="insurance_policy_expiry_date">
+                                    </div>
+                                </div>
+                                <!-- /.card-body -->
+                                <div class="card-footer">
+                                    <button type="submit" class="btn btn-primary">Register</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.card -->
+                    </div>
+                    <!--/.col (right) -->
+            </div>
+            <!-- /.row -->
+            </form>
+    </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+    </div>
+    <!-- ./wrapper -->
+
+    <!-- jQuery -->
+    <script src="../../plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- bs-custom-file-input -->
+    <script src="../../plugins/bs-custom-file-input/bs-custom-file-input.min.js"></script>
+    <script src="../../dist/js/adminlte.min.js"></script>
+    <script src="../../dist/js/demo.js"></script>
+    <!-- Page specific script -->
+    <script>
+        $(function () {
+            bsCustomFileInput.init();
+        });
+        document.getElementById("dob").valueAsDate = new Date();
+        document.getElementById("insurance_policy_expiry_date").valueAsDate = new Date();
+    </script>
+</body>
+
+</html>
